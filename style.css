@@ -1,0 +1,76 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all;
+    padding: 10px;
+}
+
+.box {
+    width: max-content;
+    height: max-content;
+    border-radius: 12px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    background: #ddd;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.2s;
+    opacity: 0.95;
+}
+
+.box:hover {
+    transform: scale(1.025);
+    opacity: 1;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.box .btn {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.75rem;
+    color: #ddd;
+    font-size: 1.4rem;
+    background: #333;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.box:hover {
+    background-color: aqua;
+}
+
+footer {
+    margin-bottom: -30%;
+    margin-top: -5%;
+    text-align: center;
+}
+
+.spn {
+    text-decoration: none;
+}
+
+.box .btn:active {
+    transform: scale(0.975);
+    background: rgba(0, 0, 0, 0.9);
+}
